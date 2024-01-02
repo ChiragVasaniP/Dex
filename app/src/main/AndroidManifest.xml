@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.abdoul.dex">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dex"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon"
+        tools:targetApi="m">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCZeB_H8P5A55xSSmPh8cvh99O6dL9P4gI" />
+
+        <activity
+            android:name=".activity.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SensesActionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.InstructionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ServicesMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HeuristicsDeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ScanProcessingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExternalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ScanDeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RiskAssessmentCompletionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ThirdRiskAssessmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SecondRiskAssessmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FirstRiskAssessmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OptionalRiskAssessmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TermsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AccountCompletionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.VerifyCodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.CreateAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SigninActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true" />
+
+
+<!--        FaceBook Login-->
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

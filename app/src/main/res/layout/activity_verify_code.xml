@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VerifyCodeActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/deesmall" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:src="@drawable/esmall" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/xsmall" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="2"
+        android:textColor="#ECC22F"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/ofThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/two"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="of 3"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_otp_verification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ofThree"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/verify_email"
+            android:textColor="#1E265C"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_email_id_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/enter_the_verification_code_sent_to_abc_gmail_com"
+            android:textColor="#1E265C"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_pin1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/outline"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+            <!-- android:nextFocusForward="@+id/num3" -->
+
+            <EditText
+                android:id="@+id/edt_pin2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/outline"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+            <!-- android:nextFocusForward="@+id/num4" -->
+
+            <EditText
+                android:id="@+id/edt_pin3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/outline"
+                android:gravity="center"
+                android:imeActionLabel="Log In"
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_pin4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/outline"
+                android:gravity="center"
+                android:imeActionLabel="Log In"
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_pin5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/outline"
+                android:gravity="center"
+                android:imeActionLabel="Log In"
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_pin6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/outline"
+                android:gravity="center"
+                android:imeActionLabel="Log In"
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+            <!-- android:nextFocusForward="@+id/submit" -->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/resend"
+            android:textAlignment="center"
+            android:textColor="#ECC22F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_blue"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ofThree"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/reset_password"
+            android:textColor="#1E265C"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/enter_new_pw"
+            android:textColor="#1E265C"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/email"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_email_forget"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FBF6F6"
+                android:cursorVisible="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/str_enter_email"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#1E265C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Password"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_password_sign_fac"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner"
+                android:textColor="#1E265C"
+                android:textSize="12sp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:endIconDrawable="@null"
+                app:errorEnabled="true"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_password_forget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#FBF6F6"
+                    android:hint="@string/str_password"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:errorEnabled="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Confirm Password"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner"
+                android:textColor="#1E265C"
+                android:textSize="12sp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_conf_password_forget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#FBF6F6"
+                    android:hint="@string/str_cof_password"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_re_enter_otp"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="@string/back_to_otp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_submit_forget"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_blue"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="@string/strSubmit"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

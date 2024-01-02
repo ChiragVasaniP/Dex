@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B2779"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="88dp"
+        android:layout_height="91dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="234dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="61dp"
+            android:src="@drawable/dee" />
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/eee" />
+
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="61dp"
+            android:src="@drawable/xxx" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/noaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textColor="#ECC22F" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

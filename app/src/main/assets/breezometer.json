@@ -1,0 +1,16 @@
+{
+  "type": "raster",
+  "tiles": [
+    "https://tiles.breezometer.com/v1/air-quality/breezometer-aqi/current-conditions/{z}/{x}/{y}.png?key=ENTER_DEMO_KEY&breezometer_aqi_color=indiper"
+  ],
+  "tileSize": 256,
+  "maxzoom": 8,
+  "id": "breezometer-tiles",
+  "type": "raster",
+  "source": "breezometer-tiles",
+  "minzoom": 0,
+  "maxzoom": 22,
+  "paint": {
+    "raster-opacity": 0.6
+  }
+}

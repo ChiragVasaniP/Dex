@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SecondRiskAssessmentActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/deesmall" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:src="@drawable/esmall" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/xsmall" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/lets_start"
+            android:textColor="#1E265C"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="21dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:background="#ECC22F" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:background="#ECC22F" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:background="#ECECEC" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/_2_do_you_have_family_deployed_overseas"
+            android:textColor="#1E265C"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/yestv2"
+            android:layout_width="128dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_yellow"
+            android:gravity="center"
+            android:text="@string/yes"
+            android:textAlignment="center"
+            android:textColor="#1E265C"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/notv2"
+            android:layout_width="128dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_border"
+            android:gravity="center"
+            android:text="@string/no"
+            android:textAlignment="center"
+            android:textColor="#1E265C"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/continuing2"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_blue"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:text="@string/continues"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

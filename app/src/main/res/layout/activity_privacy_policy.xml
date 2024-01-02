@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PrivacyPolicyActivity">
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/privacy_policy"
+        android:textColor="#ECC22F"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/device_protection"
+            android:textColor="#02092A"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:id="@+id/scroll_temrs"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:fadeScrollbars="false"
+            android:padding="8dp"
+            android:scrollbarSize="6dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/tv_terms_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut eget elementum id odio. Varius ullamcorper magnis gravida quis tempus ut at tellus quam. Ac duis vel elementum turpis. Pharetra pretium sed maecenas fermentum ac sagittis et at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut eget elementum id odio. Varius ullamcorper magnis gravida quis tempus ut at tellus quam. Ac duis vel elementum turpis. Pharetra pretium sed maecenas fermentum ac sagittis et at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut eget elementum id odio. Varius ullamcorper magnis gravida quis tempus ut at tellus quam. Ac duis vel elementum turpis. Pharetra pretium sed maecenas fermentum ac sagittis et at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut eget elementum id odio. Varius ullamcorper magnis gravida quis tempus ut at tellus quam. Ac duis vel elementum turpis. Pharetra pretium sed maecenas fermentum ac sagittis et at."
+                android:textSize="10sp" />
+        </ScrollView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/internet_exhaust_protection"
+            android:textColor="#02092A"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:id="@+id/scroll_temrs2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:fadeScrollbars="false"
+            android:padding="8dp"
+            android:scrollbarSize="6dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/tv_terms_description2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut eget elementum id odio. Varius ullamcorper magnis gravida quis tempus ut at tellus quam. Ac duis vel elementum turpis. Pharetra pretium sed maecenas fermentum ac sagittis et at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut eget elementum id odio. Varius ullamcorper magnis gravida quis tempus ut at tellus quam. Ac duis vel elementum turpis. Pharetra pretium sed maecenas fermentum ac sagittis et at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut eget elementum id odio. Varius ullamcorper magnis gravida quis tempus ut at tellus quam. Ac duis vel elementum turpis. Pharetra pretium sed maecenas fermentum ac sagittis et at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ut eget elementum id odio. Varius ullamcorper magnis gravida quis tempus ut at tellus quam. Ac duis vel elementum turpis. Pharetra pretium sed maecenas fermentum ac sagittis et at."
+                android:textSize="10sp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThirdRiskAssessmentActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/deesmall" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:src="@drawable/esmall" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/xsmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lets_start"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:textColor="#1E265C"
+            android:layout_marginStart="50dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:background="#ECC22F"/>
+            <View
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:background="#ECC22F"/>
+            <View
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:background="#ECC22F"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_how_long_have_you_been_in_your_current_job"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E265C"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"/>
+
+        <RadioGroup
+            android:id="@+id/radios"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+android:layout_marginTop="30dp"
+            android:inputType="text"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/first"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+android:layout_marginStart="40dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableStart="@android:drawable/btn_radio"
+                android:text="1 year or less"
+               android:textColor="#1E265C"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/second"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableStart="@android:drawable/btn_radio"
+                android:text="2 years or more"
+                android:textColor="#1E265C"
+                android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/third"
+                android:drawablePadding="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:background="@color/white"
+                android:button="@null"
+
+                android:drawableStart="@android:drawable/btn_radio"
+                android:text="3 years or more"
+                android:textColor="#1E265C"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/fourth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableStart="@android:drawable/btn_radio"
+                android:text="5 years or more"
+                android:textColor="#1E265C"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/continual"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_blue"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            android:elevation="10dp"
+            android:text="@string/continues"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
